@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS links(
+  code VARCHAR(16),
+  url TEXT,
+  clicks INT DEFAULT 0
+);

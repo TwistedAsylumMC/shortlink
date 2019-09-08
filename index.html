@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="description" content="Long links made shorter!">
+
+		<title>shortlink</title>
+
+		<link rel="stylesheet"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="assets/css/styles.min.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="core.js"></script>
+	</head>
+	<body>
+		<div>
+			<nav class="navbar navbar-light navbar-expand-md bg-primary navigation-clean">
+				<div class="container">
+					<a class="navbar-brand text-nowrap text-dark" href="/">{{ shortlink }}</a>
+				</div>
+			</nav>
+		</div>
+		<div class="card"></div>
+		<div class="newsletter-subscribe">
+			<div class="container">
+				<div class="intro">
+					<h2 class="text-center">Shorten your link!</h2>
+					<p class="text-center">Are long links not your thing? No? Me neither :/<br>Enter your long link below and watch magic happen!
+					</p>
+				</div>
+				<p class="text-center" id="response"></p>
+				<form class="form-inline" method="post" action="shorten.php" name="shorten">
+					<div class="form-group">
+						<input class="form-control" type="url" name="url" id="url"
+							   placeholder="Your really, really long link">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary" type="submit">shorten!</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="footer-basic">
+			<footer>
+				<div class="social">
+					<a href="https://github.com/TwistedAsylumMC"><i class="icon ion-social-github"></i></a>
+					<a href="https://twitter.com/ImNotTwisted"><i class="icon ion-social-twitter"></i></a>
+					<a href="https://youtube.com/TwistedAsylumMC"><i class="icon ion-social-youtube"></i></a>
+				</div>
+				<p class="copyright">TwistedAsylumMC © 2019</p>
+			</footer>
+		</div>
+	</body>
+</html>
